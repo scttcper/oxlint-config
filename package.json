@@ -4,7 +4,7 @@
   "description": "",
   "author": "Scott Cooper <scttcper@gmail.com>",
   "license": "MIT",
-  "repository": "",
+  "repository": "scttcper/oxlint-config",
   "type": "module",
   "exports": {
     "default": "./dist/src/index.js",
