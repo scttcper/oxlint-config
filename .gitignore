@@ -1,0 +1,28 @@
+# Logs
+npm-debug.log*
+
+# Coverage directory
+coverage
+junit.xml
+reports
+
+# Dependency directories
+node_modules
+
+# Optional REPL history
+.node_repl_history
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+.idea
+
+# Build
+build
+dist
+yarn.lock
+package-lock.json
+**.js
+**.d.ts
+
+# Stuff
+.DS_Store

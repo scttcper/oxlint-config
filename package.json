@@ -1,0 +1,49 @@
+{
+  "name": "@ctrl/oxlint-config",
+  "version": "0.0.0-placeholder",
+  "description": "",
+  "author": "Scott Cooper <scttcper@gmail.com>",
+  "license": "MIT",
+  "repository": "",
+  "type": "module",
+  "exports": {
+    "default": "./dist/src/index.js",
+    "types": "./dist/src/index.d.ts"
+  },
+  "files": [
+    ".oxlintrc.json"
+  ],
+  "sideEffects": false,
+  "keywords": [],
+  "scripts": {
+    "lint": "oxlint . && prettier --write .",
+    "lint:fix": "oxlint . --fix && prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ci": "vitest run --coverage --reporter=default --reporter=junit --outputFile=./junit.xml"
+  },
+  "devDependencies": {
+    "oxlint": "^1.6.0",
+    "prettier": "^3.6.2"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "semi": true,
+    "printWidth": 120
+  }
+}
