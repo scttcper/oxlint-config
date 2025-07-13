@@ -9,7 +9,6 @@ export class DummyClass {
     const something = await Promise.resolve({
       text: 'text',
     });
-    something;
     return something.text;
   }
 }
