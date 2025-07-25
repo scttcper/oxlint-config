@@ -51,7 +51,7 @@ Add a prettier config to your `package.json`:
 ## Current Import Order Rules
 
 1. **`^node:.*$`** - Node.js built-in modules
-2. **`^react`** - React imports  
+2. **`^react`** - React imports
 3. **`^(@ctrl)(/.*|$)`** - @ctrl packages
 4. **`^@?\\w`** - Other third-party packages
 5. **`^\\.\\./(?!.*\\.css$)`** - Relative imports from parent folders
