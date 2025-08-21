@@ -52,6 +52,7 @@
     "react/jsx-tag-spacing": "error",
     "react/jsx-wrap-multilines": "error",
     "react/rules-of-hooks": "error",
+    "react/jsx-no-useless-fragment": "error",
 
     "unicorn/better-regex": "error",
     "unicorn/consistent-destructuring": "error",
