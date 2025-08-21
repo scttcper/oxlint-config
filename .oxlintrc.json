@@ -51,6 +51,7 @@
     "react/jsx-space-before-closing": "error",
     "react/jsx-tag-spacing": "error",
     "react/jsx-wrap-multilines": "error",
+    "react/rules-of-hooks": "error",
 
     "unicorn/better-regex": "error",
     "unicorn/consistent-destructuring": "error",
