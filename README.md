@@ -36,7 +36,7 @@ Add a prettier config to your `package.json`:
     "plugins": ["@trivago/prettier-plugin-sort-imports"],
     "importOrder": [
       "^node:.*$",
-      "^react",
+      "<THIRD_PARTY_MODULES>",
       "^(@ctrl)(/.*|$)",
       "^\\.\\./(?!.*\\.css$)",
       "^\\./(?!.*\\.css$)(?=.*/)",
