@@ -51,11 +51,10 @@ Add a prettier config to your `package.json`:
 ## Current Import Order Rules
 
 1. **`^node:.*$`** - Node.js built-in modules
-2. **`^react`** - React imports
+2. **`<THIRD_PARTY_MODULES>`** - Third-party modules
 3. **`^(@ctrl)(/.*|$)`** - @ctrl packages
-4. **`^@?\\w`** - Other third-party packages
-5. **`^\\.\\./(?!.*\\.css$)`** - Relative imports from parent folders
-6. **`^\\./(?!.*\\.css$)(?=.*/)`** - Relative imports from subfolders
-7. **`^\\./(?!.*\\.css$)(?!.*/)`** - Relative imports from same folder
+4. **`^\\.\\./(?!.*\\.css$)`** - Relative imports from parent folders
+5. **`^\\./(?!.*\\.css$)(?=.*/)`** - Relative imports from subfolders
+6. **`^\\./(?!.*\\.css$)(?!.*/)`** - Relative imports from same folder
 
 **Note**: CSS files (`.css` extensions) are excluded from all relative import patterns and maintain their original positions
