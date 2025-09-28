@@ -17,5 +17,7 @@ jobs:
     name: NPM Release
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: scttcper/github-actions/.github/workflows/npm-release.yml@main
+    with:
+      skip_build: true
     secrets:
       GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}

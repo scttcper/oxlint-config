@@ -16,7 +16,6 @@
     "typescript/prefer-literal-enum-member": "error",
     "typescript/array-type": ["error", { "default": "array-simple", "readonly": "array-simple" }],
     "typescript/prefer-for-of": "error",
-
     "react/jsx-key": "error",
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-undef": "error",
