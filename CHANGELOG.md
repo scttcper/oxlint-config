@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>1.2.7 (2025-10-05)</small>
+
+* fix: bump ([cdee573](https://github.com/scttcper/oxlint-config/commit/cdee573))
+
 ## <small>1.2.6 (2025-09-28)</small>
 
 * Merge branch 'main' of https://github.com/scttcper/oxlint-config ([3346bb3](https://github.com/scttcper/oxlint-config/commit/3346bb3))
