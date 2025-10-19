@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>1.2.9 (2025-10-19)</small>
+
+* fix: bump version ([8251ffb](https://github.com/scttcper/oxlint-config/commit/8251ffb))
+* fix: trigger release ([463a9ec](https://github.com/scttcper/oxlint-config/commit/463a9ec))
+
 ## <small>1.2.8 (2025-10-07)</small>
 
 * fix: 1.20 ([ebfde63](https://github.com/scttcper/oxlint-config/commit/ebfde63))
