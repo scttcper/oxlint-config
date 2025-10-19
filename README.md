@@ -1,6 +1,4 @@
-# @ctrl/oxlint-config 
-
-[![NPM](https://img.shields.io/npm/v/@ctrl/oxlint-config)](https://www.npmjs.com/package/@ctrl/oxlint-config)
+# @ctrl/oxlint-config [![NPM](https://img.shields.io/npm/v/@ctrl/oxlint-config)](https://www.npmjs.com/package/@ctrl/oxlint-config)
 
 A shareable oxlint for my projects.
 
