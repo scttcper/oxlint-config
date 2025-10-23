@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 (2025-10-23)
+
+* feat: require all curly ([acad45e](https://github.com/scttcper/oxlint-config/commit/acad45e))
+
 ## <small>1.2.9 (2025-10-19)</small>
 
 * fix: bump version ([8251ffb](https://github.com/scttcper/oxlint-config/commit/8251ffb))
