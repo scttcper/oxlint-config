@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>1.3.1 (2025-10-23)</small>
+
+* Merge branch 'main' of https://github.com/scttcper/oxlint-config ([bf06d30](https://github.com/scttcper/oxlint-config/commit/bf06d30))
+* fix: disable annoying rules ([96a638b](https://github.com/scttcper/oxlint-config/commit/96a638b))
+
 ## 1.3.0 (2025-10-23)
 
 * feat: require all curly ([acad45e](https://github.com/scttcper/oxlint-config/commit/acad45e))
