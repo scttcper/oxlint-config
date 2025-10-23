@@ -120,7 +120,7 @@
     "no-unsafe-return": "error",
     "no-unsafe-string-substring": "error",
     "no-unused-expressions": "error",
-    "curly": "error",
+    "curly": ["error", "all"],
     "eqeqeq": ["error", "always", { "null": "ignore" }],
     "no-else-return": "error",
     "unicorn/prefer-math-min-max": "error",
