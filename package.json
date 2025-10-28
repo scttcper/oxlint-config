@@ -10,8 +10,7 @@
   },
   "type": "module",
   "exports": {
-    "default": "./dist/src/index.js",
-    "types": "./dist/src/index.d.ts"
+    "default": "./.oxlintrc.json"
   },
   "files": [
     ".oxlintrc.json"
