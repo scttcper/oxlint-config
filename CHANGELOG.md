@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>1.3.2 (2025-10-28)</small>
+
+* fix: export ([bb203b3](https://github.com/scttcper/oxlint-config/commit/bb203b3))
+
 ## <small>1.3.1 (2025-10-23)</small>
 
 * Merge branch 'main' of https://github.com/scttcper/oxlint-config ([bf06d30](https://github.com/scttcper/oxlint-config/commit/bf06d30))
