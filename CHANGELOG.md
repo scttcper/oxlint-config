@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>1.3.3 (2025-12-05)</small>
+
+* fix: bump ([235fd08](https://github.com/scttcper/oxlint-config/commit/235fd08))
+
 ## <small>1.3.2 (2025-10-28)</small>
 
 * fix: export ([bb203b3](https://github.com/scttcper/oxlint-config/commit/bb203b3))
