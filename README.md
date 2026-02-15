@@ -4,6 +4,8 @@ A shareable oxlint config for myself
 
 ## Getting Started
 
+Install and pin dev dependencies:
+
 ```sh
 pnpm add -D oxlint oxfmt @ctrl/oxlint-config
 ```
@@ -50,13 +52,13 @@ Add a `.oxfmtrc.json` config
 }
 ```
 
-## Current Import Order Rules
+Add scripts to your `package.json`
 
-1. **`^node:.*$`** - Node.js built-in modules
-2. **`<THIRD_PARTY_MODULES>`** - Third-party modules
-3. **`^(@ctrl)(/.*|$)`** - @ctrl packages
-4. **`^\\.\\./(?!.*\\.css$)`** - Relative imports from parent folders
-5. **`^\\./(?!.*\\.css$)(?=.*/)`** - Relative imports from subfolders
-6. **`^\\./(?!.*\\.css$)(?!.*/)`** - Relative imports from same folder
-
-**Note**: CSS files (`.css` extensions) are excluded from all relative import patterns and maintain their original positions
+```json
+{
+  "scripts": {
+    "lint": "oxfmt --check && oxlint .",
+    "lint:fix": "oxfmt && oxlint . --fix"
+  }
+}
+```
