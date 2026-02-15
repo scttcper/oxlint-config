@@ -1,37 +1,33 @@
 {
   "name": "@ctrl/oxlint-config",
-  "version": "1.3.3",
+  "version": "0.0.0-placeholder",
   "description": "",
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "keywords": [],
   "license": "MIT",
+  "author": "Scott Cooper <scttcper@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scttcper/oxlint-config.git"
   },
-  "type": "module",
-  "exports": {
-    "default": "./.oxlintrc.json"
-  },
   "files": [
     ".oxlintrc.json"
   ],
+  "type": "module",
   "sideEffects": false,
-  "keywords": [],
-  "scripts": {
-    "lint": "oxlint . && prettier --write .",
-    "lint:fix": "oxlint . --fix && prettier --write .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:ci": "vitest run --coverage --reporter=default --reporter=junit --outputFile=./junit.xml"
+  "exports": {
+    "default": "./.oxlintrc.json"
   },
-  "devDependencies": {
-    "oxlint": "^1.31.0",
-    "prettier": "^3.7.4"
-  },
-  "packageManager": "pnpm@10.24.0",
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "scripts": {
+    "lint": "oxfmt --check && oxlint .",
+    "lint:fix": "oxfmt && oxlint . --fix"
+  },
+  "devDependencies": {
+    "oxfmt": "0.32.0",
+    "oxlint": "1.47.0"
   },
   "release": {
     "branches": [
@@ -41,11 +37,5 @@
   "engines": {
     "node": ">=20"
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "arrowParens": "always",
-    "semi": true,
-    "printWidth": 120
-  }
+  "packageManager": "pnpm@10.29.3"
 }

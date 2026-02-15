@@ -1,11 +1,11 @@
 # @ctrl/oxlint-config [![NPM](https://img.shields.io/npm/v/@ctrl/oxlint-config)](https://www.npmjs.com/package/@ctrl/oxlint-config)
 
-A shareable oxlint for my projects.
+A shareable oxlint config for myself
 
 ## Getting Started
 
 ```sh
-pnpm add -D oxlint @ctrl/oxlint-config prettier @trivago/prettier-plugin-sort-imports
+pnpm add -D oxlint oxfmt @ctrl/oxlint-config
 ```
 
 ## Usage
@@ -19,31 +19,33 @@ In your project's `.oxlintrc.json` file, add the following:
     "node": true
   },
   "plugins": ["react", "unicorn", "typescript", "oxc", "import"],
-  "extends": ["@ctrl/oxlint-config"]
+  "extends": ["./node_modules/@ctrl/oxlint-config/.oxlintrc.json"]
 }
 ```
 
-Add a prettier config to your `package.json`:
+Add a `.oxfmtrc.json` config
 
 ```json
 {
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "arrowParens": "avoid",
-    "semi": true,
-    "printWidth": 100,
-    "plugins": ["@trivago/prettier-plugin-sort-imports"],
-    "importOrder": [
-      "^node:.*$",
-      "<THIRD_PARTY_MODULES>",
-      "^(@ctrl)(/.*|$)",
-      "^\\.\\./(?!.*\\.css$)",
-      "^\\./(?!.*\\.css$)(?=.*/)",
-      "^\\./(?!.*\\.css$)(?!.*/)"
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 100,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "experimentalSortImports": {
+    "groups": [
+      ["side-effect-style", "side-effect"],
+      "builtin",
+      "external",
+      "internal",
+      "parent",
+      "index",
+      "sibling"
     ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": false
+    "newlinesBetween": true
+  },
+  "experimentalSortPackageJson": true,
+  "experimentalTailwindcss": {
+    "classOrder": "shadcn"
   }
 }
 ```
