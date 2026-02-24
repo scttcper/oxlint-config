@@ -96,6 +96,7 @@
     "unicorn/prefer-string-slice": "error",
     "unicorn/prefer-string-starts-ends-with": "error",
     "unicorn/prefer-string-trim-start-end": "error",
+    // For some reason forcing ternary operator on statements
     "unicorn/prefer-ternary": "off",
     "unicorn/prefer-type-error": "error",
     "unicorn/throw-new-error": "error",
