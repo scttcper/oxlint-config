@@ -33,20 +33,12 @@ Add a `.oxfmtrc.json` config
   "printWidth": 100,
   "singleQuote": true,
   "arrowParens": "avoid",
-  "experimentalSortImports": {
-    "groups": [
-      ["side-effect-style", "side-effect"],
-      "builtin",
-      "external",
-      "internal",
-      "parent",
-      "index",
-      "sibling"
-    ],
+  "sortImports": {
+    "groups": ["side_effect", "builtin", "external", "internal", "parent", "index", "sibling"],
     "newlinesBetween": true
   },
-  "experimentalSortPackageJson": true,
-  "experimentalTailwindcss": {
+  "sortPackageJson": true,
+  "sortTailwindcss": {
     "classOrder": "shadcn"
   }
 }
@@ -57,8 +49,8 @@ Add scripts to your `package.json`
 ```json
 {
   "scripts": {
-    "lint": "oxfmt --check && oxlint .",
-    "lint:fix": "oxfmt && oxlint . --fix"
+    "lint": "oxlint . && oxfmt --check",
+    "lint:fix": "oxlint . --fix && oxfmt"
   }
 }
 ```

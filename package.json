@@ -26,8 +26,8 @@
     "lint:fix": "oxfmt && oxlint . --fix"
   },
   "devDependencies": {
-    "oxfmt": "0.32.0",
-    "oxlint": "1.47.0"
+    "oxfmt": "0.35.0",
+    "oxlint": "1.50.0"
   },
   "release": {
     "branches": [
@@ -37,5 +37,5 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@10.29.3"
+  "packageManager": "pnpm@10.30.2"
 }
